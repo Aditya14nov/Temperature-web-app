@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/index.css">
+    <title>Form Details</title>
+</head>
+<body>
+   <section id="contact">
+    <div class="contact-form bg-primary p-2">
+      <div class="form-element">
+        <h2 class="m-heading">Fill In the Details</h2>
+        <p>Please use the form below to fill the details</p>
+        <form action="/map" name="contact" method="POST" data-netlify="true">
+          <div class="form-group">
+            <label for="eventdate">Date</label>
+            <input type="date" min="2020-01-01" max="2020-12-31" name="eventdate" id="eventdate">
+          </div>
+          <div class="form-group">
+            <label for="eventtime">Time(only hours)</label>
+            <input type="time" name="eventtime" id="eventtime" min="00:00" max="23:00" step="3600">
+          </div>
+          <input type="submit" value="Send" class="btn2">
+        </form>
+      </div>
+      <!-- <div class="image" style="display: none;">
+        <div class="empty"></div>
+        <img src="../static/maptemp.png" alt="map image">
+      </div> -->
+    </div>
+  </section>
+</body>
+</html>
